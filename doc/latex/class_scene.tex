@@ -1,0 +1,145 @@
+\hypertarget{class_scene}{
+\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_scene_a4ddf2d16f371ee9533b3faf1dd5ddfb1}{
+void {\bfseries render} ()}
+\label{class_scene_a4ddf2d16f371ee9533b3faf1dd5ddfb1}
+
+\item 
+\hypertarget{class_scene_a69f2b1c4849bc11d64820473d0346055}{
+void {\bfseries setRoot} (\hyperlink{class_transform}{Transform} $\ast$root)}
+\label{class_scene_a69f2b1c4849bc11d64820473d0346055}
+
+\item 
+\hypertarget{class_scene_a47f1c7d12d5a8579d798e03d7b046a5c}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries getRoot} ()}
+\label{class_scene_a47f1c7d12d5a8579d798e03d7b046a5c}
+
+\item 
+\hypertarget{class_scene_a6320c8939cde42065e446ec96fb773ac}{
+void {\bfseries addGameObject} (\hyperlink{class_game_object}{GameObject} $\ast$object)}
+\label{class_scene_a6320c8939cde42065e446ec96fb773ac}
+
+\item 
+\hypertarget{class_scene_a6c25f42faa6ce62b9aa2ecf97ef92447}{
+void {\bfseries removeGameObject} (\hyperlink{class_game_object}{GameObject} $\ast$object)}
+\label{class_scene_a6c25f42faa6ce62b9aa2ecf97ef92447}
+
+\item 
+\hypertarget{class_scene_a13b298b0c24c92929bf9850012980623}{
+void {\bfseries addLight} (\hyperlink{class_light}{Light} $\ast$light)}
+\label{class_scene_a13b298b0c24c92929bf9850012980623}
+
+\item 
+\hypertarget{class_scene_a41cdd9b48a474cc640ae00a84188e81a}{
+void {\bfseries addMeshRenderer} (\hyperlink{class_mesh_renderer}{MeshRenderer} $\ast$renderer)}
+\label{class_scene_a41cdd9b48a474cc640ae00a84188e81a}
+
+\item 
+\hypertarget{class_scene_a02f79812e48581675c97c67c598fbe9b}{
+void {\bfseries applyLightsStates} () const }
+\label{class_scene_a02f79812e48581675c97c67c598fbe9b}
+
+\item 
+\hypertarget{class_scene_a5cbb688a0217639bcc285c01fa005af9}{
+void {\bfseries addCamera} (\hyperlink{class_camera}{Camera} $\ast$camera)}
+\label{class_scene_a5cbb688a0217639bcc285c01fa005af9}
+
+\item 
+\hypertarget{class_scene_aa7a931a7e530c936433c3950c07f797e}{
+void {\bfseries setMainCamera} (\hyperlink{class_camera}{Camera} $\ast$camera)}
+\label{class_scene_aa7a931a7e530c936433c3950c07f797e}
+
+\item 
+\hypertarget{class_scene_a7da13a9b6cdc118cee47666ad164380d}{
+void {\bfseries updateRenderQueue} ()}
+\label{class_scene_a7da13a9b6cdc118cee47666ad164380d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_scene_a18d706b52a631806605de9271f634cda}{
+static void {\bfseries printNode} (\hyperlink{class_transform}{Transform} $\ast$trans, int level=0)}
+\label{class_scene_a18d706b52a631806605de9271f634cda}
+
+\item 
+\hypertarget{class_scene_a0c564ec7ac34966a1cc1ceb0a4bf89ad}{
+static void {\bfseries printSceneInfo} (\hyperlink{class_scene}{Scene} $\ast$scene)}
+\label{class_scene_a0c564ec7ac34966a1cc1ceb0a4bf89ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_scene_ae8c9fdb61e1c4575d04054bdd22465ff}{
+static GLuint {\bfseries shadowMap} = 0}
+\label{class_scene_ae8c9fdb61e1c4575d04054bdd22465ff}
+
+\item 
+\hypertarget{class_scene_a08b50d77587fb485b7a46dc4bd62002b}{
+static Mat4x4f {\bfseries projShadowMatrix} = Mat4x4f(0)}
+\label{class_scene_a08b50d77587fb485b7a46dc4bd62002b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_scene_a51c2c0fbc037c46049e4dc48567c17bb}{
+void {\bfseries traverseSceneGraph} ()}
+\label{class_scene_a51c2c0fbc037c46049e4dc48567c17bb}
+
+\item 
+\hypertarget{class_scene_a8325c012e9d12ca4afe9b50aaeecb4a1}{
+void {\bfseries make\_\-proj\_\-shadow\_\-texture} (\hyperlink{class_light}{Light} $\ast$light)}
+\label{class_scene_a8325c012e9d12ca4afe9b50aaeecb4a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_scene_a4010430ecd2e23c7d96764e6fdacb1a6}{
+std::vector$<$ \hyperlink{class_transform}{Transform} $\ast$ $>$ {\bfseries transforms}}
+\label{class_scene_a4010430ecd2e23c7d96764e6fdacb1a6}
+
+\item 
+\hypertarget{class_scene_a4ecc3182a80435e1c4dfbe1b20e559bd}{
+std::vector$<$ \hyperlink{class_light}{Light} $\ast$ $>$ {\bfseries lights}}
+\label{class_scene_a4ecc3182a80435e1c4dfbe1b20e559bd}
+
+\item 
+\hypertarget{class_scene_a766a660b1b9d851b14157a6d9373f719}{
+std::vector$<$ \hyperlink{class_camera}{Camera} $\ast$ $>$ {\bfseries cameras}}
+\label{class_scene_a766a660b1b9d851b14157a6d9373f719}
+
+\item 
+\hypertarget{class_scene_a38d0a48c9b531a3012bbb14f0455ddf0}{
+std::vector$<$ \hyperlink{class_renderable}{Renderable} $\ast$ $>$ {\bfseries renderQueue}}
+\label{class_scene_a38d0a48c9b531a3012bbb14f0455ddf0}
+
+\item 
+\hypertarget{class_scene_ac40b87dab6f00fa2ad4819c52559d699}{
+std::vector$<$ \hyperlink{class_renderable}{Renderable} $\ast$ $>$ {\bfseries shadowCasters}}
+\label{class_scene_ac40b87dab6f00fa2ad4819c52559d699}
+
+\item 
+\hypertarget{class_scene_ad9ed8db8f6868234e789557e267cc2e7}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries sceneRoot}}
+\label{class_scene_ad9ed8db8f6868234e789557e267cc2e7}
+
+\item 
+\hypertarget{class_scene_a878011b448f85714694abf6ddeee9376}{
+\hyperlink{class_camera}{Camera} $\ast$ {\bfseries mainCamera}}
+\label{class_scene_a878011b448f85714694abf6ddeee9376}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Scene.h\item 
+Scene.cpp\end{DoxyCompactItemize}

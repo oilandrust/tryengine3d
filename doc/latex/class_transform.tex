@@ -1,0 +1,491 @@
+\hypertarget{class_transform}{
+\section{Transform Class Reference}
+\label{class_transform}\index{Transform@{Transform}}
+}
+Inheritance diagram for Transform:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transform}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_transform_af3334261b0dc6bd65a7666bb5878db6c}{
+typedef std::vector$<$ \hyperlink{class_transform}{Transform} $\ast$ $>$::const\_\-iterator {\bfseries ChildrenIterator}}
+\label{class_transform_af3334261b0dc6bd65a7666bb5878db6c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_transform_a8fd5df93229c1897055d7c9f0e5021ec}{
+virtual const \hyperlink{class_r_t_t_i}{RTTI} \& {\bfseries getType} () const }
+\label{class_transform_a8fd5df93229c1897055d7c9f0e5021ec}
+
+\item 
+\hypertarget{class_transform_a3f5a7ad019f402b52e5c7fed3699f01f}{
+{\bfseries Transform} (Vec3f const \&pos)}
+\label{class_transform_a3f5a7ad019f402b52e5c7fed3699f01f}
+
+\item 
+\hypertarget{class_transform_aa7a387108cf421888952b454d641895b}{
+{\bfseries Transform} (const \hyperlink{class_transform}{Transform} \&transform)}
+\label{class_transform_aa7a387108cf421888952b454d641895b}
+
+\item 
+\hypertarget{class_transform_a92d05e13bee5846f0895e097d55a0235}{
+void {\bfseries setGameObject} (\hyperlink{class_game_object}{GameObject} $\ast$object)}
+\label{class_transform_a92d05e13bee5846f0895e097d55a0235}
+
+\item 
+\hypertarget{class_transform_a64fefa4ce638359dffa28147d010c88c}{
+\hyperlink{class_game_object}{GameObject} $\ast$ {\bfseries getGameObject} () const }
+\label{class_transform_a64fefa4ce638359dffa28147d010c88c}
+
+\item 
+\hypertarget{class_transform_ad7d487d8508540f04b4caf3f9dd4dad2}{
+void {\bfseries addChild} (\hyperlink{class_transform}{Transform} $\ast$child)}
+\label{class_transform_ad7d487d8508540f04b4caf3f9dd4dad2}
+
+\item 
+\hypertarget{class_transform_a8c40957cdc496f51a993d252bc8fa459}{
+void {\bfseries attachChild} (\hyperlink{class_transform}{Transform} $\ast$child)}
+\label{class_transform_a8c40957cdc496f51a993d252bc8fa459}
+
+\item 
+\hypertarget{class_transform_a9d371d071641600820959f42670502ce}{
+void {\bfseries removeChild} (\hyperlink{class_transform}{Transform} $\ast$child)}
+\label{class_transform_a9d371d071641600820959f42670502ce}
+
+\item 
+\hypertarget{class_transform_add6687cbcdb5e3a586ee8470237f109b}{
+void {\bfseries removeChild} (int index)}
+\label{class_transform_add6687cbcdb5e3a586ee8470237f109b}
+
+\item 
+\hypertarget{class_transform_a7961b68e168fd48a7c6a0e7a378acfeb}{
+ChildrenIterator {\bfseries getChildrenIteratorBegin} () const }
+\label{class_transform_a7961b68e168fd48a7c6a0e7a378acfeb}
+
+\item 
+\hypertarget{class_transform_ad12f0221301787ba9b806e1398f56f9d}{
+ChildrenIterator {\bfseries getChildrenIteratorEnd} () const }
+\label{class_transform_ad12f0221301787ba9b806e1398f56f9d}
+
+\item 
+\hypertarget{class_transform_ae09f6770d60d2644d36eb666899a91ed}{
+int {\bfseries getChildCount} () const }
+\label{class_transform_ae09f6770d60d2644d36eb666899a91ed}
+
+\item 
+\hypertarget{class_transform_a79b644e5db68374184142d8d95df6934}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries getChild} (int index)}
+\label{class_transform_a79b644e5db68374184142d8d95df6934}
+
+\item 
+\hypertarget{class_transform_ad9f5a1d8320c3280bff5189b8e800b34}{
+int {\bfseries getChildIndex} (\hyperlink{class_transform}{Transform} $\ast$child) const }
+\label{class_transform_ad9f5a1d8320c3280bff5189b8e800b34}
+
+\item 
+\hypertarget{class_transform_ae3e8acbd25d7d171aff00da038f79a9a}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries getParent} ()}
+\label{class_transform_ae3e8acbd25d7d171aff00da038f79a9a}
+
+\item 
+\hypertarget{class_transform_a0bbb28cce7bca9363703b41ca10dcc57}{
+void {\bfseries setParent} (\hyperlink{class_transform}{Transform} $\ast$par)}
+\label{class_transform_a0bbb28cce7bca9363703b41ca10dcc57}
+
+\item 
+void \hyperlink{class_transform_a5a8d1890adf4dbba15a436f55f21c601}{setPosition} (const Vec3f \&pos)
+\item 
+void \hyperlink{class_transform_a08ced4e72301c25f99dedd54859fb23b}{setWorldPosition} (const Vec3f \&pos)
+\item 
+void \hyperlink{class_transform_a42d7de04d07befc5f7e5fd53c5ea7a46}{setScale} (const Vec3f \&scal)
+\item 
+void \hyperlink{class_transform_abe5b02d0f0bdcb854c26f1b81a4affde}{setWorldScale} (const Vec3f \&scal)
+\item 
+void \hyperlink{class_transform_a81bd0c59e3e584f6cefc63de81de7471}{setRotation} (const Vec3f \&rot)
+\item 
+\hypertarget{class_transform_a6fec9382d9851c08c303fbad1ae51f51}{
+void {\bfseries translate} (float x, float y, float z)}
+\label{class_transform_a6fec9382d9851c08c303fbad1ae51f51}
+
+\item 
+\hypertarget{class_transform_a707167a0cf2b279459b7b17a5e8270aa}{
+void {\bfseries translate} (const Vec3f \&translation)}
+\label{class_transform_a707167a0cf2b279459b7b17a5e8270aa}
+
+\item 
+\hypertarget{class_transform_a56f65b9bab2981aa800d3559823ad1b7}{
+void {\bfseries scale} (float x, float y, float z)}
+\label{class_transform_a56f65b9bab2981aa800d3559823ad1b7}
+
+\item 
+\hypertarget{class_transform_a1e0ef8fc5f8a4c84f0f4b13b39e250cc}{
+void {\bfseries scale} (const Vec3f \&scaling)}
+\label{class_transform_a1e0ef8fc5f8a4c84f0f4b13b39e250cc}
+
+\item 
+void \hyperlink{class_transform_a49da2af362feeaf653e09216d2e67314}{rotate} (float rx, float ry, float rz, SpaceOfReferenceEnum reference=PARENT)
+\item 
+void \hyperlink{class_transform_ae5b4cdd5d9cf3e8c3ef67907fd1663c2}{rotate} (const Vec3f \&euler\_\-angles, SpaceOfReferenceEnum reference=PARENT)
+\item 
+void \hyperlink{class_transform_ab8ab1268af903a4302825dc44f567446}{rotate} (const Vec3f \&axis, float angle)
+\item 
+void \hyperlink{class_transform_a559d420570aded5e0a5db372dfd7f4fa}{lookAt} (const Vec3f \&targetPoint)
+\item 
+\hypertarget{class_transform_abb87ba961251c18c7964cf9dd50923fa}{
+Vec3f {\bfseries getPosition} () const }
+\label{class_transform_abb87ba961251c18c7964cf9dd50923fa}
+
+\item 
+\hypertarget{class_transform_a7f91e85beafc56a5da3c53b31d7e5eb2}{
+Vec3f {\bfseries getWorldPosition} () const }
+\label{class_transform_a7f91e85beafc56a5da3c53b31d7e5eb2}
+
+\item 
+\hypertarget{class_transform_a35628a3c05902445ad155de45418e1cb}{
+Vec3f {\bfseries getScale} () const }
+\label{class_transform_a35628a3c05902445ad155de45418e1cb}
+
+\item 
+\hypertarget{class_transform_adfedc5e72afe00288d1bf84939e1f09b}{
+Vec3f {\bfseries getWorldScale} () const }
+\label{class_transform_adfedc5e72afe00288d1bf84939e1f09b}
+
+\item 
+\hypertarget{class_transform_ad941bc86b36ad61fad7dd24389e443f3}{
+Vec3f {\bfseries getRotation} () const }
+\label{class_transform_ad941bc86b36ad61fad7dd24389e443f3}
+
+\item 
+Vec3f \hyperlink{class_transform_a5072a5bbe7c6f2655b15b84576af9b43}{getForward} () const 
+\item 
+Vec3f \hyperlink{class_transform_ac0946577a65bd758b1ac8871fe626b84}{getUp} () const 
+\item 
+Vec3f \hyperlink{class_transform_a046298794a6ef7496718c1508b506b8e}{getRight} () const 
+\item 
+\hypertarget{class_transform_ab767ab8fcc2788303d6dbc998b28f944}{
+Mat3x3f {\bfseries getRotationMatrix} () const }
+\label{class_transform_ab767ab8fcc2788303d6dbc998b28f944}
+
+\item 
+\hypertarget{class_transform_aed6f35d7acd26be90473ed42f8c23a89}{
+Mat3x3f {\bfseries getWorldRotationMatrix} () const }
+\label{class_transform_aed6f35d7acd26be90473ed42f8c23a89}
+
+\item 
+\hypertarget{class_transform_a7c990738fbadb5ad1001be23626bb2c8}{
+Mat4x4f {\bfseries getTransformMatrix} () const }
+\label{class_transform_a7c990738fbadb5ad1001be23626bb2c8}
+
+\item 
+Mat4x4f \hyperlink{class_transform_acdd5b97256cce34a3581fe027b2a331f}{getInverseTransformMatrix} () const 
+\item 
+\hypertarget{class_transform_a36af2906e513a2a7f94a73e90fcd86d2}{
+Mat4x4f {\bfseries getWorldTransformMatrix} () const }
+\label{class_transform_a36af2906e513a2a7f94a73e90fcd86d2}
+
+\item 
+\hypertarget{class_transform_aad951114815c5309cc15466cd7446a36}{
+Mat4x4f {\bfseries getWorldInverseTransformMatrix} () const }
+\label{class_transform_aad951114815c5309cc15466cd7446a36}
+
+\item 
+\hypertarget{class_transform_a12a6ce5dea580d99c46911968471d283}{
+Mat4x4f {\bfseries getWorldViewMatrix} () const }
+\label{class_transform_a12a6ce5dea580d99c46911968471d283}
+
+\item 
+\hypertarget{class_transform_a403bb8391d10095c7ce5af0d3405358f}{
+Mat4x4f {\bfseries getWorldInverseViewMatrix} () const }
+\label{class_transform_a403bb8391d10095c7ce5af0d3405358f}
+
+\item 
+\hypertarget{class_transform_ad82fc7d715d43b2708eb1c78e2c59167}{
+void {\bfseries applyTransform} () const }
+\label{class_transform_ad82fc7d715d43b2708eb1c78e2c59167}
+
+\item 
+\hypertarget{class_transform_ab949ddd4287a01f3443dcffbb9eef7c7}{
+void {\bfseries applyWorldTransform} () const }
+\label{class_transform_ab949ddd4287a01f3443dcffbb9eef7c7}
+
+\item 
+\hypertarget{class_transform_a0db6a1afc8535b20c2fc4cbd5099764b}{
+void {\bfseries applyViewTransform} () const }
+\label{class_transform_a0db6a1afc8535b20c2fc4cbd5099764b}
+
+\item 
+\hypertarget{class_transform_a0161434d698b7017f9a3eb56ece7547e}{
+void {\bfseries applyWorldViewTransform} () const }
+\label{class_transform_a0161434d698b7017f9a3eb56ece7547e}
+
+\item 
+void \hyperlink{class_transform_a52689327a6d1fabd443da6191251e4b9}{\_\-updateWorldPosition} ()
+\item 
+void \hyperlink{class_transform_ae8bcdae14fdc45b5b1f1a54f55b82341}{\_\-updateTransformMatrix} ()
+\item 
+void \hyperlink{class_transform_a3d26f7bc1a10b83809f3780458f5361d}{\_\-updateWorldTransformMatrix} ()
+\item 
+void \hyperlink{class_transform_a627cc3ba8984b755b42ab629c7d027ea}{\_\-updateWorldRotationMatrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_transform_a6c99a0f2b5cd6f81948b950c695f09a8}{
+static const \hyperlink{class_r_t_t_i}{RTTI} {\bfseries TYPE}}
+\label{class_transform_a6c99a0f2b5cd6f81948b950c695f09a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_transform_aeae6186d24a6968ab1cc423e6275edd0}{
+\hyperlink{class_game_object}{GameObject} $\ast$ {\bfseries gameObject}}
+\label{class_transform_aeae6186d24a6968ab1cc423e6275edd0}
+
+\item 
+\hypertarget{class_transform_aa1e92491c9905869a108ec09a08e5eb4}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries parent}}
+\label{class_transform_aa1e92491c9905869a108ec09a08e5eb4}
+
+\item 
+\hypertarget{class_transform_aba90cae9b61c6c614cd7b1a8151c24bd}{
+std::vector$<$ \hyperlink{class_transform}{Transform} $\ast$ $>$ {\bfseries children}}
+\label{class_transform_aba90cae9b61c6c614cd7b1a8151c24bd}
+
+\item 
+\hypertarget{class_transform_ade2b0121437dc8ffe92136d6d3592963}{
+Vec3f {\bfseries position}}
+\label{class_transform_ade2b0121437dc8ffe92136d6d3592963}
+
+\item 
+\hypertarget{class_transform_aefb83556a032d9ac4b76a9510461788a}{
+Vec3f {\bfseries worldPosition}}
+\label{class_transform_aefb83556a032d9ac4b76a9510461788a}
+
+\item 
+\hypertarget{class_transform_a06b04127dae94305ef74104aba545cbb}{
+Vec3f {\bfseries scaling}}
+\label{class_transform_a06b04127dae94305ef74104aba545cbb}
+
+\item 
+\hypertarget{class_transform_aa0fc7b67266edf8c8d7f62b534dee695}{
+Vec3f {\bfseries worldScaling}}
+\label{class_transform_aa0fc7b67266edf8c8d7f62b534dee695}
+
+\item 
+\hypertarget{class_transform_a6f903ef4b633f5efb267d422aa5c20fb}{
+Vec3f {\bfseries eulerAngles}}
+\label{class_transform_a6f903ef4b633f5efb267d422aa5c20fb}
+
+\item 
+\hypertarget{class_transform_ad18dc47412fadd14c60be416f030970c}{
+Vec3f {\bfseries worldEulerAngles}}
+\label{class_transform_ad18dc47412fadd14c60be416f030970c}
+
+\item 
+\hypertarget{class_transform_ad44aa94578d6f80d135b879add5eda1d}{
+Mat3x3f {\bfseries rotationMatrix}}
+\label{class_transform_ad44aa94578d6f80d135b879add5eda1d}
+
+\item 
+\hypertarget{class_transform_a0f8cf1d6d75de8543ab60feda8512f4f}{
+Mat3x3f {\bfseries worldRotationMatrix}}
+\label{class_transform_a0f8cf1d6d75de8543ab60feda8512f4f}
+
+\item 
+\hypertarget{class_transform_a2926f621763bb09c31e3507cc2446289}{
+Mat4x4f {\bfseries transformMatrix}}
+\label{class_transform_a2926f621763bb09c31e3507cc2446289}
+
+\item 
+\hypertarget{class_transform_a6d68c18e11ae927154ba5a539f1bf014}{
+Mat4x4f {\bfseries worldTransformMatrix}}
+\label{class_transform_a6d68c18e11ae927154ba5a539f1bf014}
+
+\item 
+\hypertarget{class_transform_a5df3356b2241cad2e6dec0ccf4baee44}{
+bool {\bfseries \_\-hasMoved}}
+\label{class_transform_a5df3356b2241cad2e6dec0ccf4baee44}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_transform_ac98d07dd8f7b70e16ccb9a01abf56b9c}{
+class {\bfseries boost::serialization::access}}
+\label{class_transform_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_transform_ae8bcdae14fdc45b5b1f1a54f55b82341}{
+\index{Transform@{Transform}!\_\-updateTransformMatrix@{\_\-updateTransformMatrix}}
+\index{\_\-updateTransformMatrix@{\_\-updateTransformMatrix}!Transform@{Transform}}
+\subsubsection[{\_\-updateTransformMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::\_\-updateTransformMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_ae8bcdae14fdc45b5b1f1a54f55b82341}
+Called internally, updates and caches the local transform matrix from position rotation and scaling, calls \hyperlink{class_transform_a52689327a6d1fabd443da6191251e4b9}{\_\-updateWorldPosition()} \hypertarget{class_transform_a52689327a6d1fabd443da6191251e4b9}{
+\index{Transform@{Transform}!\_\-updateWorldPosition@{\_\-updateWorldPosition}}
+\index{\_\-updateWorldPosition@{\_\-updateWorldPosition}!Transform@{Transform}}
+\subsubsection[{\_\-updateWorldPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::\_\-updateWorldPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a52689327a6d1fabd443da6191251e4b9}
+Called internally, updates and caches the world position given the one of the parent, propagates to childrens \hypertarget{class_transform_a627cc3ba8984b755b42ab629c7d027ea}{
+\index{Transform@{Transform}!\_\-updateWorldRotationMatrix@{\_\-updateWorldRotationMatrix}}
+\index{\_\-updateWorldRotationMatrix@{\_\-updateWorldRotationMatrix}!Transform@{Transform}}
+\subsubsection[{\_\-updateWorldRotationMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::\_\-updateWorldRotationMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a627cc3ba8984b755b42ab629c7d027ea}
+Called internally, updates and caches the worl rotation matrix (R) from the parent, propagates to childrens \hypertarget{class_transform_a3d26f7bc1a10b83809f3780458f5361d}{
+\index{Transform@{Transform}!\_\-updateWorldTransformMatrix@{\_\-updateWorldTransformMatrix}}
+\index{\_\-updateWorldTransformMatrix@{\_\-updateWorldTransformMatrix}!Transform@{Transform}}
+\subsubsection[{\_\-updateWorldTransformMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::\_\-updateWorldTransformMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a3d26f7bc1a10b83809f3780458f5361d}
+Called internally, updates and caches the worl transform (SRT) matrix from the parent, propagates to childrens \hypertarget{class_transform_a5072a5bbe7c6f2655b15b84576af9b43}{
+\index{Transform@{Transform}!getForward@{getForward}}
+\index{getForward@{getForward}!Transform@{Transform}}
+\subsubsection[{getForward}]{\setlength{\rightskip}{0pt plus 5cm}Vec3f Transform::getForward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_transform_a5072a5bbe7c6f2655b15b84576af9b43}
+Returns the forward vector of the frame in world space \hypertarget{class_transform_acdd5b97256cce34a3581fe027b2a331f}{
+\index{Transform@{Transform}!getInverseTransformMatrix@{getInverseTransformMatrix}}
+\index{getInverseTransformMatrix@{getInverseTransformMatrix}!Transform@{Transform}}
+\subsubsection[{getInverseTransformMatrix}]{\setlength{\rightskip}{0pt plus 5cm}Mat4x4f Transform::getInverseTransformMatrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_transform_acdd5b97256cce34a3581fe027b2a331f}
+Returns the inverse of the transform matrix (used?) not taking into account the scaling \hypertarget{class_transform_a046298794a6ef7496718c1508b506b8e}{
+\index{Transform@{Transform}!getRight@{getRight}}
+\index{getRight@{getRight}!Transform@{Transform}}
+\subsubsection[{getRight}]{\setlength{\rightskip}{0pt plus 5cm}Vec3f Transform::getRight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_transform_a046298794a6ef7496718c1508b506b8e}
+Returns the right vector of the frame in world space \hypertarget{class_transform_ac0946577a65bd758b1ac8871fe626b84}{
+\index{Transform@{Transform}!getUp@{getUp}}
+\index{getUp@{getUp}!Transform@{Transform}}
+\subsubsection[{getUp}]{\setlength{\rightskip}{0pt plus 5cm}Vec3f Transform::getUp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_transform_ac0946577a65bd758b1ac8871fe626b84}
+Returns the up vector of the frame in world space \hypertarget{class_transform_a559d420570aded5e0a5db372dfd7f4fa}{
+\index{Transform@{Transform}!lookAt@{lookAt}}
+\index{lookAt@{lookAt}!Transform@{Transform}}
+\subsubsection[{lookAt}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::lookAt (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ targetPoint}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a559d420570aded5e0a5db372dfd7f4fa}
+Sets the orientation of the transform so that it points to targetPoint with up vector being z world \hypertarget{class_transform_a49da2af362feeaf653e09216d2e67314}{
+\index{Transform@{Transform}!rotate@{rotate}}
+\index{rotate@{rotate}!Transform@{Transform}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::rotate (
+\begin{DoxyParamCaption}
+\item[{float}]{ rx, }
+\item[{float}]{ ry, }
+\item[{float}]{ rz, }
+\item[{SpaceOfReferenceEnum}]{ reference = {\ttfamily PARENT}}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a49da2af362feeaf653e09216d2e67314}
+set the rotation of the transform, bad interface since rot are done xyz \hypertarget{class_transform_ae5b4cdd5d9cf3e8c3ef67907fd1663c2}{
+\index{Transform@{Transform}!rotate@{rotate}}
+\index{rotate@{rotate}!Transform@{Transform}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::rotate (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ euler\_\-angles, }
+\item[{SpaceOfReferenceEnum}]{ reference = {\ttfamily PARENT}}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_ae5b4cdd5d9cf3e8c3ef67907fd1663c2}
+set the rotation of the transform, bad interface since rot are done xyz \hypertarget{class_transform_ab8ab1268af903a4302825dc44f567446}{
+\index{Transform@{Transform}!rotate@{rotate}}
+\index{rotate@{rotate}!Transform@{Transform}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::rotate (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ axis, }
+\item[{float}]{ angle}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_ab8ab1268af903a4302825dc44f567446}
+Rotates the transform around an arbitrary axe in world space \hypertarget{class_transform_a5a8d1890adf4dbba15a436f55f21c601}{
+\index{Transform@{Transform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Transform@{Transform}}
+\subsubsection[{setPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::setPosition (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ pos}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a5a8d1890adf4dbba15a436f55f21c601}
+Unused, unmaintained \hypertarget{class_transform_a81bd0c59e3e584f6cefc63de81de7471}{
+\index{Transform@{Transform}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!Transform@{Transform}}
+\subsubsection[{setRotation}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::setRotation (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ rot}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a81bd0c59e3e584f6cefc63de81de7471}
+Unused, unmaintained \hypertarget{class_transform_a42d7de04d07befc5f7e5fd53c5ea7a46}{
+\index{Transform@{Transform}!setScale@{setScale}}
+\index{setScale@{setScale}!Transform@{Transform}}
+\subsubsection[{setScale}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::setScale (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ scal}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a42d7de04d07befc5f7e5fd53c5ea7a46}
+Unused, unmaintained \hypertarget{class_transform_a08ced4e72301c25f99dedd54859fb23b}{
+\index{Transform@{Transform}!setWorldPosition@{setWorldPosition}}
+\index{setWorldPosition@{setWorldPosition}!Transform@{Transform}}
+\subsubsection[{setWorldPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::setWorldPosition (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ pos}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_a08ced4e72301c25f99dedd54859fb23b}
+Unused, unimplemented \hypertarget{class_transform_abe5b02d0f0bdcb854c26f1b81a4affde}{
+\index{Transform@{Transform}!setWorldScale@{setWorldScale}}
+\index{setWorldScale@{setWorldScale}!Transform@{Transform}}
+\subsubsection[{setWorldScale}]{\setlength{\rightskip}{0pt plus 5cm}void Transform::setWorldScale (
+\begin{DoxyParamCaption}
+\item[{const Vec3f \&}]{ scal}
+\end{DoxyParamCaption}
+)}}
+\label{class_transform_abe5b02d0f0bdcb854c26f1b81a4affde}
+Unused, unimplemented 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Transform.h\item 
+Transform.cpp\end{DoxyCompactItemize}

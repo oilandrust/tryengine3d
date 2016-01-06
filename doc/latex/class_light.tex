@@ -1,0 +1,116 @@
+\hypertarget{class_light}{
+\section{Light Class Reference}
+\label{class_light}\index{Light@{Light}}
+}
+Inheritance diagram for Light:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_light}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_light_a5404d9b1ee53f91da443c061b98a8f66}{
+virtual const \hyperlink{class_r_t_t_i}{RTTI} \& {\bfseries getType} () const }
+\label{class_light_a5404d9b1ee53f91da443c061b98a8f66}
+
+\item 
+\hypertarget{class_light_af5c65ad5f3237bea9f6f469eb95a66a1}{
+{\bfseries Light} (const Vec4f \&amb, const Vec4f \&diff, const Vec4f \&spec, \hyperlink{class_light_manager}{LightManager} $\ast$manager)}
+\label{class_light_af5c65ad5f3237bea9f6f469eb95a66a1}
+
+\item 
+\hypertarget{class_light_a45f84b6f75a0d02760d3a20efaf8f83e}{
+void {\bfseries setLightType} (LightTypEnum type)}
+\label{class_light_a45f84b6f75a0d02760d3a20efaf8f83e}
+
+\item 
+\hypertarget{class_light_a26ececa9d5a86203fc5cd0dfa74d76b7}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries getTransform} () const }
+\label{class_light_a26ececa9d5a86203fc5cd0dfa74d76b7}
+
+\item 
+\hypertarget{class_light_a03628bf455079a5efd55d3b2b650ff9a}{
+void {\bfseries setTransform} (\hyperlink{class_transform}{Transform} $\ast$trans)}
+\label{class_light_a03628bf455079a5efd55d3b2b650ff9a}
+
+\item 
+\hypertarget{class_light_a0136c2fa693d47f86c51e643b9c0a6ee}{
+void {\bfseries applyLightState} ()}
+\label{class_light_a0136c2fa693d47f86c51e643b9c0a6ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_light_a73b5878b0115b283ae5b0a82cc827dac}{
+static \hyperlink{class_light}{Light} {\bfseries ambientLight} (const Vec4f \&amb, \hyperlink{class_light_manager}{LightManager} $\ast$manager)}
+\label{class_light_a73b5878b0115b283ae5b0a82cc827dac}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_light_a6a4b7875ce0fe875b9cddde551552526}{
+static const \hyperlink{class_r_t_t_i}{RTTI} {\bfseries TYPE}}
+\label{class_light_a6a4b7875ce0fe875b9cddde551552526}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_light_aec8f8df7c99076d4b165382c0f04b827}{
+GLenum {\bfseries intToGlLightId} (int id)}
+\label{class_light_aec8f8df7c99076d4b165382c0f04b827}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_light_a1b68d4ff673ffffd8c6bb24995ccde1e}{
+Vec4f {\bfseries diffuse}}
+\label{class_light_a1b68d4ff673ffffd8c6bb24995ccde1e}
+
+\item 
+\hypertarget{class_light_afa8ce9cb262a986a0fee095c8420fe0a}{
+Vec4f {\bfseries ambient}}
+\label{class_light_afa8ce9cb262a986a0fee095c8420fe0a}
+
+\item 
+\hypertarget{class_light_a0e4f7cb1501e06372a016e9264db37c8}{
+Vec4f {\bfseries specular}}
+\label{class_light_a0e4f7cb1501e06372a016e9264db37c8}
+
+\item 
+\hypertarget{class_light_a5c02ae068c634bf7327e4b66b4ea8744}{
+float {\bfseries coneAngle}}
+\label{class_light_a5c02ae068c634bf7327e4b66b4ea8744}
+
+\item 
+\hypertarget{class_light_a0f24e5db8e0b914a745c0a0f5bbef1f6}{
+float {\bfseries coneExponent}}
+\label{class_light_a0f24e5db8e0b914a745c0a0f5bbef1f6}
+
+\item 
+\hypertarget{class_light_aa4da12007ef812f8c73b0c65b19ee501}{
+LightTypEnum {\bfseries lightType}}
+\label{class_light_aa4da12007ef812f8c73b0c65b19ee501}
+
+\item 
+\hypertarget{class_light_a2dd418642e49db9b22bd206c82a8f29a}{
+GLenum {\bfseries glLightId}}
+\label{class_light_a2dd418642e49db9b22bd206c82a8f29a}
+
+\item 
+\hypertarget{class_light_a23c44b0fcf2249ff53707d136a2cfdc4}{
+\hyperlink{class_transform}{Transform} $\ast$ {\bfseries transform}}
+\label{class_light_a23c44b0fcf2249ff53707d136a2cfdc4}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Light.h\item 
+Light.cpp\end{DoxyCompactItemize}

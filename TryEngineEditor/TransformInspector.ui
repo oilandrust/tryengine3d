@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TransformInspectForm</class>
+ <widget class="QWidget" name="TransformInspectForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>235</width>
+    <height>106</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TransformInspectForm</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>231</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Transform</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>10</y>
+      <width>216</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Rotation</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Scaling</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="tx"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="ty"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="tz"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="rx"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="ry"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="rz"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="sx"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="sy"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="sz"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

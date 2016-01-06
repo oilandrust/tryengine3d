@@ -1,0 +1,128 @@
+\hypertarget{class_mesh_renderer}{
+\section{MeshRenderer Class Reference}
+\label{class_mesh_renderer}\index{MeshRenderer@{MeshRenderer}}
+}
+Inheritance diagram for MeshRenderer:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_mesh_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mesh_renderer_a4430f795bd67ba8aca7b57bab488971b}{
+virtual const \hyperlink{class_r_t_t_i}{RTTI} \& {\bfseries getType} () const }
+\label{class_mesh_renderer_a4430f795bd67ba8aca7b57bab488971b}
+
+\item 
+\hypertarget{class_mesh_renderer_a81dd19d7a59f2d8bb086ab939b19a4c5}{
+{\bfseries MeshRenderer} (BasicShapeEnum shape)}
+\label{class_mesh_renderer_a81dd19d7a59f2d8bb086ab939b19a4c5}
+
+\item 
+\hypertarget{class_mesh_renderer_a5a811c3fbbdd31edef0ef23c3219c35e}{
+virtual void {\bfseries render} () const }
+\label{class_mesh_renderer_a5a811c3fbbdd31edef0ef23c3219c35e}
+
+\item 
+\hypertarget{class_mesh_renderer_ae7f66301b96360025adbd901465ef9d5}{
+void {\bfseries setMaterial} (\hyperlink{class_material}{Material} $\ast$)}
+\label{class_mesh_renderer_ae7f66301b96360025adbd901465ef9d5}
+
+\item 
+\hypertarget{class_mesh_renderer_a75c264da40ce0ac85919736c2905203e}{
+\hyperlink{class_material}{Material} $\ast$ {\bfseries getMaterial} ()}
+\label{class_mesh_renderer_a75c264da40ce0ac85919736c2905203e}
+
+\item 
+\hypertarget{class_mesh_renderer_a16a30a96dccb8b557247322e247d4a8f}{
+void {\bfseries setMesh} (\hyperlink{class_t_r3_d_1_1_tri_mesh}{TriMesh} $\ast$Mesh)}
+\label{class_mesh_renderer_a16a30a96dccb8b557247322e247d4a8f}
+
+\item 
+\hypertarget{class_mesh_renderer_ab66e3b92d702f2b93d3d3afb74807d24}{
+\hyperlink{class_t_r3_d_1_1_tri_mesh}{TriMesh} $\ast$ {\bfseries getMesh} ()}
+\label{class_mesh_renderer_ab66e3b92d702f2b93d3d3afb74807d24}
+
+\item 
+\hypertarget{class_mesh_renderer_a18e4146b5a29d4916dca693f39db2233}{
+bool {\bfseries castShadow} () const }
+\label{class_mesh_renderer_a18e4146b5a29d4916dca693f39db2233}
+
+\item 
+\hypertarget{class_mesh_renderer_ac150da9be57d1616c1a5ccba374fa2fb}{
+bool {\bfseries receiveShadow} () const }
+\label{class_mesh_renderer_ac150da9be57d1616c1a5ccba374fa2fb}
+
+\item 
+\hypertarget{class_mesh_renderer_a58101967c2a4cd65513aeb4b940314ec}{
+void {\bfseries setCastShadow} (bool cast)}
+\label{class_mesh_renderer_a58101967c2a4cd65513aeb4b940314ec}
+
+\item 
+\hypertarget{class_mesh_renderer_abf4aa0764b41e79388905f6c23457d00}{
+void {\bfseries setReceiveShadow} (bool receive)}
+\label{class_mesh_renderer_abf4aa0764b41e79388905f6c23457d00}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mesh_renderer_af9376b762b4c96f9e92ebb3bf94458df}{
+static const \hyperlink{class_r_t_t_i}{RTTI} {\bfseries TYPE}}
+\label{class_mesh_renderer_af9376b762b4c96f9e92ebb3bf94458df}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mesh_renderer_ae5987818b394c9677ed984fcd254fc07}{
+int {\bfseries nbOfVertices}}
+\label{class_mesh_renderer_ae5987818b394c9677ed984fcd254fc07}
+
+\item 
+\hypertarget{class_mesh_renderer_a35d178fce64e5ef4c07bbb59706a6b65}{
+Vec3f $\ast$ {\bfseries vertices}}
+\label{class_mesh_renderer_a35d178fce64e5ef4c07bbb59706a6b65}
+
+\item 
+\hypertarget{class_mesh_renderer_a18547492a62a887bc63ae950ed947de7}{
+Vec3f $\ast$ {\bfseries normals}}
+\label{class_mesh_renderer_a18547492a62a887bc63ae950ed947de7}
+
+\item 
+\hypertarget{class_mesh_renderer_a39910329c399dcf516e9e6d3a70e4ce8}{
+\hyperlink{class_material}{Material} $\ast$ {\bfseries material}}
+\label{class_mesh_renderer_a39910329c399dcf516e9e6d3a70e4ce8}
+
+\item 
+\hypertarget{class_mesh_renderer_a75f70932dae889f11d5614ef46ac3d11}{
+\hyperlink{class_t_r3_d_1_1_tri_mesh}{TriMesh} $\ast$ {\bfseries mesh}}
+\label{class_mesh_renderer_a75f70932dae889f11d5614ef46ac3d11}
+
+\item 
+\hypertarget{class_mesh_renderer_a92a86c242532912eebf5cf7dad28e5a2}{
+bool {\bfseries \_\-castShadow}}
+\label{class_mesh_renderer_a92a86c242532912eebf5cf7dad28e5a2}
+
+\item 
+\hypertarget{class_mesh_renderer_a96df19ab2f11f1319803ae0aacb0a8b6}{
+bool {\bfseries \_\-receiveShadow}}
+\label{class_mesh_renderer_a96df19ab2f11f1319803ae0aacb0a8b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_mesh_renderer_ac98d07dd8f7b70e16ccb9a01abf56b9c}{
+class {\bfseries boost::serialization::access}}
+\label{class_mesh_renderer_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+MeshRenderer.h\item 
+MeshRenderer.cpp\end{DoxyCompactItemize}

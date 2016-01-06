@@ -1,0 +1,92 @@
+
+IF(WIN32)
+  OPTION(DISABLE_VS2005DEPRECATED "Disable the depreceated warnings in VS2005" ON)
+  IF(DISABLE_VS2005DEPRECATED)
+    ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS)
+    ADD_DEFINITIONS(-D_SCL_SECURE_NO_WARNINGS)
+  ENDIF(DISABLE_VS2005DEPRECATED)
+ENDIF(WIN32)
+
+##ADD_DEFINITIONS(-D_SECURE_SCL=0)
+#ADD_DEFINITIONS(-D_HAS_ITERATOR_DEBUGGING=0)
+
+ADD_LIBRARY(TryEngine3D 
+Component.cpp
+Component.h
+GameObject.cpp
+GameObject.h
+Light.cpp
+Light.h
+LightManager.cpp
+LightManager.h
+Material.cpp
+Material.h
+MeshRenderer.cpp
+MeshRenderer.h
+Object.h
+Object.cpp
+GameObjectFactory.h
+GameObjectFactory.cpp
+Scene.cpp
+Scene.h
+trackballcamera.cpp
+trackballcamera.h
+Transform.cpp
+Transform.h
+TryEngine.h
+Texture.cpp
+Texture.h
+Behaviour.cpp
+Behaviour.h
+includeGL.h
+Camera.cpp
+Camera.h
+GLSLShader.h
+GLSLShader.cpp
+Collider.h
+Collider.cpp
+SphereCollider.h
+SphereCollider.cpp
+BoxCollider.h
+BoxCollider.cpp
+PlaneCollider.h
+PlaneCollider.cpp
+CollisionHandler.h
+CollisionHandler.cpp
+TriMesh.h
+TriMesh.cpp
+Screen.h
+Screen.cpp
+Serialization.h
+RTTI.h
+RTTI.cpp
+TREngine.h
+TREngine.cpp
+Renderable.cpp
+Renderable.h
+Terrain.cpp
+Terrain.h
+ParticleSystem.h
+ParticleSystem.cpp
+Animation.h
+Animation.cpp
+DebugCamera.h
+DebugCamera.cpp
+Ressource.h
+Ressource.cpp
+RessourceManager.h
+RessourceManager.cpp
+Timer.h
+Timer.cpp
+TryEngineApp.cpp
+TryEngineApp.h
+)
+
+include_directories( 
+	${GEL_INCLUDE_DIR}
+	${SDL_INCLUDE_DIR}	
+	${SDLIMAGE_INCLUDE_DIR}
+	${3RD_PARTY_INCLUDE_DIRS}
+)
+link_libraries( ${3RD_PARTY_LIBRARIES})
+	

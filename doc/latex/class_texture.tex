@@ -1,0 +1,106 @@
+\hypertarget{class_texture}{
+\section{Texture Class Reference}
+\label{class_texture}\index{Texture@{Texture}}
+}
+Inheritance diagram for Texture:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_texture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_texture_ad90cdf5df00d3bd3e2f8585156b390eb}{
+virtual const \hyperlink{class_r_t_t_i}{RTTI} \& {\bfseries getType} () const }
+\label{class_texture_ad90cdf5df00d3bd3e2f8585156b390eb}
+
+\item 
+\hypertarget{class_texture_a25ab3a58fa60ccafe3e3883727bc63fc}{
+{\bfseries Texture} (const std::string \&filePath)}
+\label{class_texture_a25ab3a58fa60ccafe3e3883727bc63fc}
+
+\item 
+\hypertarget{class_texture_ab3fd325003ae75f683e86b511e5872a7}{
+void {\bfseries bindTexture} () const }
+\label{class_texture_ab3fd325003ae75f683e86b511e5872a7}
+
+\item 
+\hypertarget{class_texture_af4209ac00bda33ab1638dfd88e7951a0}{
+GLuint {\bfseries getTexId} () const }
+\label{class_texture_af4209ac00bda33ab1638dfd88e7951a0}
+
+\item 
+\hypertarget{class_texture_a249deb0d8e3d0e152cc50931b9145f81}{
+Vec4f {\bfseries getPixel} (int u, int v) const }
+\label{class_texture_a249deb0d8e3d0e152cc50931b9145f81}
+
+\item 
+\hypertarget{class_texture_a1f3e2bb88d139a8a15a11f88a34962fb}{
+Vec4f {\bfseries getPixel} (float u, float v) const }
+\label{class_texture_a1f3e2bb88d139a8a15a11f88a34962fb}
+
+\item 
+\hypertarget{class_texture_a496e7ecce88213f6190dcb65659ee9b4}{
+int {\bfseries width} () const }
+\label{class_texture_a496e7ecce88213f6190dcb65659ee9b4}
+
+\item 
+\hypertarget{class_texture_a0a5592fcf3a2270578880aed20c4bde0}{
+int {\bfseries height} () const }
+\label{class_texture_a0a5592fcf3a2270578880aed20c4bde0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_texture_a27590e7d9d79dd477e37fc0dacedf1f2}{
+static const \hyperlink{class_r_t_t_i}{RTTI} {\bfseries TYPE}}
+\label{class_texture_a27590e7d9d79dd477e37fc0dacedf1f2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_texture_a48e6b8ac86268c48111d7aee8a9ab93b}{
+SDL\_\-Surface $\ast$ {\bfseries flipSurface} (SDL\_\-Surface $\ast$surface)}
+\label{class_texture_a48e6b8ac86268c48111d7aee8a9ab93b}
+
+\item 
+\hypertarget{class_texture_a6b5ca734aab4547f7847ff2c8cc39f09}{
+GLuint {\bfseries loadTexture} (const char $\ast$filename, bool useMipMap)}
+\label{class_texture_a6b5ca734aab4547f7847ff2c8cc39f09}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_texture_a4b6c998e726cb9e63cdd3122d961290e}{
+GLuint {\bfseries glTexObject}}
+\label{class_texture_a4b6c998e726cb9e63cdd3122d961290e}
+
+\item 
+\hypertarget{class_texture_a3e8720fe713ee621f587d4bdbfcb8d12}{
+std::string {\bfseries ressourceName}}
+\label{class_texture_a3e8720fe713ee621f587d4bdbfcb8d12}
+
+\item 
+\hypertarget{class_texture_ad04401a2c4b6795ecdb0addd47a41651}{
+SDL\_\-Surface $\ast$ {\bfseries textureMemory}}
+\label{class_texture_ad04401a2c4b6795ecdb0addd47a41651}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_texture_ac98d07dd8f7b70e16ccb9a01abf56b9c}{
+class {\bfseries boost::serialization::access}}
+\label{class_texture_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Texture.h\item 
+Texture.cpp\end{DoxyCompactItemize}
